@@ -25,3 +25,67 @@ body {
     text-wrap: balance;
   }
 }
+
+@layer utilities {
+  .background-animate {
+    background-size: 400%;
+    -webkit-animation: AnimateBackground 3s ease infinite;
+    -moz-animation: AnimateBackground 3s ease infinite;
+    animation: AnimateBackground 3s ease infinite;
+  }
+
+  @keyframes AnimateBackground {
+    0%,100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+
+  .animate-gradient-xy {
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .animate-pulse-fast {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% {
+      opacity: 0.75;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
+}
+
+@layer utilities {
+  @keyframes gradientX {
+    0%, 100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+  
+  .animate-gradient-x {
+    animation: gradientX 5s ease infinite;
+    background-size: 200% 200%;
+  }
+}
