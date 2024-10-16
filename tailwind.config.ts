@@ -8,9 +8,24 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      animation: {
+        'fade-in': 'fadeIn 1s ease-out',
+        'fade-left': 'fadeLeft 1s ease-out',
+        'glow': 'glow 4s ease-in-out infinite alternate',
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        fadeLeft: {
+          '0%': { opacity: '0', transform: 'translateX(-20px)' },
+          '100%': { opacity: '1', transform: 'translateX(0)' },
+        },
+        glow: {
+          '0%': { opacity: '0.4' },
+          '100%': { opacity: '1' },
+        },
       },
     },
   },

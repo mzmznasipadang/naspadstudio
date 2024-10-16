@@ -42,11 +42,11 @@ const ProcessSection = () => {
                             <button className="bg-[#282828] text-white text-base font-normal py-3 px-6 rounded-[20px] border-2 border-[#1b98e0] hover:bg-[#1b98e0] transition-colors duration-300">
                                 {step.buttonText}
                             </button>
-                            <button className="bg-gradient-to-r from-[#1B98E0] to-[#A535F0] rounded-[18px] text-white font-normal p-1">
+                            {/* <button className="bg-gradient-to-r from-[#1B98E0] to-[#A535F0] rounded-[18px] text-white font-normal p-1">
                                 <span className="flex w-full bg-gray-900 text-white rounded-[22px] p-2">
                                     Gradient border
                                 </span>
-                            </button>
+                            </button> */}
                         </div>
                     ))}
                 </div>

@@ -7,6 +7,7 @@ import FeaturedWorks from "./components/FeaturedWorks";
 import ContactSection from "./components/ContactSection";
 import Footer from "./components/Footer";
 
+
 export default function Home() {
   return (
     <div className="max-w-screen min-h-screen relative bg-[#101111] mx-auto overflow-x-hidden">
