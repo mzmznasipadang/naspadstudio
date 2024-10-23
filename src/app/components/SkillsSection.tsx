@@ -13,7 +13,7 @@ const skills = [
 const SkillsSection = () => {
   return (
     <section className="w-full py-12 px-4 bg-[#101111]">
-      <div className="max-w-[1240px] mx-auto">
+      <div className="max-w-[1000px] mx-auto">
         <div className="relative py-8">
           {/* Top line */}
           <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white to-transparent"></div>

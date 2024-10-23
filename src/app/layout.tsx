@@ -1,57 +1,20 @@
+// src/app/layout.tsx
+
 import localFont from "next/font/local";
 import "./globals.css";
 import { Metadata } from "next";
 import { Analytics } from '@vercel/analytics/react';
 
-
 export const metadata: Metadata = {
-  title: {
-    default: "Naspad Studio Digital",
-    template: "%s | naspadstudio.id",
-  },
-  description: "Founder of NasPad Studio",
-  openGraph: {
-    title: "Naspad Studio Digital",
-    description:
-      "Founder of NasPad Studio",
-    url: "https://naspadstudio.id",
-    siteName: "naspadstudio.id",
-    images: [
-      {
-        url: "https://raw.githubusercontent.com/mzmznasipadang/vicsporto/main/public/og.png",
-        width: 1920,
-        height: 1080,
-      },
-    ],
-    locale: "en-US",
-    type: "website",
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
-  },
-  twitter: {
-    title: "Naspad Studio Digital",
-    card: "summary_large_image",
-  },
-  icons: {
-    shortcut: "/favicon.png",
-  },
+  // ... your metadata configuration
 };
-
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
   weight: "100 900",
 });
+
 const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
@@ -65,14 +28,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-      <Analytics />
-      </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-        {/* <SpeedInsights /> */}
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+          {children}
+        <Analytics />
       </body>
     </html>
   );

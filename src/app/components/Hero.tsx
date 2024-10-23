@@ -5,13 +5,13 @@ import Image from 'next/image';
 const Hero = () => {
     return (
         <section className="w-full py-8 px-4">
-            <div className="max-w-[1238px] mx-auto relative h-[349px]">
+            <div className="max-w-[1000px] mx-auto relative h-[400px]">
                 <h1 className="absolute left-0 top-[30px] text-[71px] font-['SF Pro']">
                     <span className="text-white">Hi! I&apos;m </span>
                     <span className="text-[#1b98e0] font-bold">Vic!</span>
                 </h1>
 
-                <p className="w-[730px] absolute left-0 top-[159px] text-white text-[23px] font-['SF Pro']">
+                <p className="w-[500px] absolute left-0 top-[159px] text-white text-xl">
                     I am a designer and an enterprise resource planning developer (with a side kick for aviation photography)
                 </p>
 
