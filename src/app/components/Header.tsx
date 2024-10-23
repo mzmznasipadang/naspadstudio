@@ -4,7 +4,6 @@ import Image from 'next/image';
 
 const navigation = [
   { name: "About", href: "/about" },
-  { name: "Services", href: "/services" },
   { name: "Portfolio", href: "/portfolio" },
   { name: "Contact", href: "/contact" },
 ];
@@ -13,7 +12,7 @@ export default function Header() {
   return (
     <>
       <div className="h-[116px]"></div> {/* Spacer div */}
-      <div className="fixed top-0 left-0 right-0 z-50 bg-[#101111]">
+      <div className="fixed top-0 left-0 right-0 z-50 bg-[#101111] animate-fade-in">
         <div className="container mx-auto px-4 py-4">
           <div className="max-w-[1238px] mx-auto">
             <header className="w-full relative rounded-[20px] bg-[#1b1b1b] border border-[#1b98e0] h-[88px]">

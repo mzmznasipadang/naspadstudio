@@ -12,7 +12,7 @@ const skills = [
 
 const SkillsSection = () => {
   return (
-    <section className="w-full py-12 px-4 bg-[#101111]">
+    <section className="w-full py-12 px-4 bg-[#101111] animate-fade-in">
       <div className="max-w-[1000px] mx-auto">
         <div className="relative py-8">
           {/* Top line */}
