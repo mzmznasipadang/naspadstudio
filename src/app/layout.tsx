@@ -9,9 +9,9 @@ export const metadata: Metadata = {
   title: 'NasPad Studio Digital',
     description: 'Creativity Starts With You',
     openGraph: {
-      title: 'Contact Us | NasPad Studio Digital',
-      description: 'Please hire me, I need money.',
-      url: 'https://naspadstudio.id/contact',
+      title: 'NasPad Studio Digital',
+      description: 'Creativity Starts With You',
+      url: 'https://naspadstudio.id/',
       siteName: 'NasPad Studio Digital',
       images: [
         {
@@ -26,8 +26,8 @@ export const metadata: Metadata = {
     },
     twitter: {
       card: 'summary_large_image',
-      title: 'Contact Us | NasPad Studio Digital',
-      description: 'Please hire me, I need money.',
+      title: 'NasPad Studio Digital',
+      description: 'Creativity Starts With You',
       images: ['/og.png'],
       creator: '@MzMzNasiPadang',
     },
