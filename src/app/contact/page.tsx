@@ -186,7 +186,7 @@ export default function Contact() {
             {/* Contact Info */}
             <div className="space-y-4 mb-8">
               <p>info@naspadstudio.id</p>
-              <p>tel : +6281119903888</p>
+              {/* <p>tel : +6281119903888</p> */}
             </div>
 
             {/* Address */}
@@ -198,11 +198,11 @@ export default function Contact() {
             </div>
 
             {/* Bank Details */}
-            <div>
+            {/* <div>
               <p className="font-semibold mb-2">Bank number</p>
               <p>BCA 5275025400</p>
               <p>NasPad Studio Digital PT</p>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
