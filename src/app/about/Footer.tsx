@@ -36,7 +36,7 @@ const Footer = () => {
                 {/* Logo and Tagline */}
                 <div className="flex items-center mb-8 md:mb-0">
                     <Image
-                        src="/Footerlogo.png" // Replace with your actual logo path
+                        src="/IdeasFooter.png" // Replace with your actual logo path
                         alt="NasPad Studio Logo"
                         width={360}
                         height={100}
