@@ -1,13 +1,9 @@
-// src/app/layout.tsx
+// src/app/contact/layout.tsx
+import type { Metadata } from 'next'
 
-import localFont from "next/font/local";
-import "./globals.css";
-import { Metadata } from "next";
-import { Analytics } from '@vercel/analytics/react';
-
-export const metadata: Metadata = {
-  title: 'NasPad Studio Digital',
-    description: 'Creativity Starts With You',
+export const  metadata: Metadata = {
+    title: 'About Us | NasPad Studio Digital',
+    description: 'Learn more about NasPad Studio Digital and our journey in design and development.',
     openGraph: {
       title: 'Contact Us | NasPad Studio Digital',
       description: 'Please hire me, I need money.',
@@ -47,31 +43,12 @@ export const metadata: Metadata = {
       shortcut: '/favicon.ico',
       apple: '/apple-touch-icon.png',
     },
-};
+  };
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
-
-export default function RootLayout({
+export default function AboutLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  return (
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-          {children}
-        <Analytics />
-      </body>
-    </html>
-  );
+}: {
+  children: React.ReactNode
+}) {
+  return children;
 }
