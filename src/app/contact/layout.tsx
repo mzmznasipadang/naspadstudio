@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     title: 'Contact Us | NasPad Studio Digital',
     description: 'Please hire me, I need money.',
     url: 'https://naspadstudio.id/contact',
-    siteName: 'NasPad Studio Digital',
+    siteName: 'NasPtudio Digital',
     images: [
       {
         url: '/og.png',
@@ -39,8 +39,8 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon.ico',
+    icon: '/favicon.png',
+    shortcut: '/favicon.png',
     apple: '/apple-touch-icon.png',
   },
 }
