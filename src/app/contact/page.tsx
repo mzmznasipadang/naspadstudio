@@ -96,7 +96,7 @@ export default function Contact() {
   return (
     <>
     <Header />
-    <main className="min-h-screen bg-[#101111] flex flex-col">
+    <main className=" bg-[#101111] flex flex-col">
       <div className="flex-grow max-w-[1000px] mx-auto px-4 py-16">
         {/* Title */}
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-['SF Pro'] mb-12 animate-fade-in">
