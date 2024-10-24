@@ -23,6 +23,7 @@ export default function Contact() {
   const [errors, setErrors] = useState<FormErrors>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showSuccess, setShowSuccess] = useState(false);
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
   const validateForm = (): FormErrors => {
     const newErrors: FormErrors = {};
@@ -48,14 +49,24 @@ export default function Contact() {
     e.preventDefault();
     const newErrors = validateForm();
     setErrors(newErrors);
-
+    setErrorMessage(null);
+  
     if (Object.keys(newErrors).length === 0) {
       setIsSubmitting(true);
       
       try {
-        // Simulate API call
-        await new Promise(resolve => setTimeout(resolve, 1500));
-        
+        const response = await fetch('/api/send-email', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formData),
+        });
+  
+        if (!response.ok) {
+          throw new Error('Failed to send email');
+        }
+  
         // Clear form
         setFormData({ name: '', email: '', message: '' });
         setShowSuccess(true);
@@ -66,16 +77,17 @@ export default function Contact() {
         }, 3000);
       } catch (error) {
         console.error('Error submitting form:', error);
+        setErrorMessage('Failed to send message. Please try again later.');
       } finally {
         setIsSubmitting(false);
       }
     }
-  };
+  }
+  
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
-    // Clear error when user starts typing
     if (errors[name as keyof FormData]) {
       setErrors(prev => ({ ...prev, [name]: '' }));
     }
@@ -102,6 +114,13 @@ export default function Contact() {
                 Message sent successfully! We&apos;ll get back to you soon.
               </div>
             )}
+
+             {/* Error Message */}
+             {errorMessage && (
+                <div className="mb-6 p-4 bg-red-500/10 border border-red-500 rounded-lg text-red-500 animate-fade-in">
+                  {errorMessage}
+                </div>
+              )}
 
             <form onSubmit={handleSubmit} className="space-y-6">
               {/* Name Input */}
@@ -186,7 +205,7 @@ export default function Contact() {
             {/* Contact Info */}
             <div className="space-y-4 mb-8">
               <p>info@naspadstudio.id</p>
-              {/* <p>tel : +6281119903888</p> */}
+              <p>tel : +6281119903888</p>
             </div>
 
             {/* Address */}

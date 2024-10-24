@@ -1,5 +1,7 @@
 // src/app/about/page.tsx
+"use client"
 import Image from 'next/image';
+import React from 'react';
 import Link from 'next/link';
 import Header from '../about/Header';
 import Footer from '../about/Footer';
