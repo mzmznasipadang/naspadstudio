@@ -1,15 +1,22 @@
+// sanity/nps-website/sanity.config.ts
 import { defineConfig } from 'sanity';
 import { deskTool } from 'sanity/desk';
-import { work } from './sanity/schemas/work';
+import { visionTool } from '@sanity/vision';
+import { work } from './schemas/work'; // Import schema directly
 
 export default defineConfig({
   name: 'default',
-  title: 'Your Project Name',
+  title: 'NPS Website',
+
   projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID!,
   dataset: process.env.NEXT_PUBLIC_SANITY_DATASET!,
-  basePath: '/studio', // Access studio at /studio
-  plugins: [deskTool()],
+
+  plugins: [
+    deskTool(),
+    process.env.NODE_ENV === 'development' ? visionTool() : undefined,
+  ].filter(Boolean),
+
   schema: {
-    types: [work],
+    types: [work], // Use schema directly instead of importing from schemaTypes
   },
 });
