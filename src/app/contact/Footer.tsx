@@ -1,6 +1,7 @@
 // src/components/Footer.js
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const socialIcons = [
     {
@@ -70,9 +71,11 @@ const Footer = () => {
                 </div>
 
                 {/* Hire Me Button */}
-                <button className="bg-[#1b1b1b] text-white text-xl font-['SF Pro'] px-[21px] py-3 rounded-[30px] border-2 border-[#204782] hover:bg-[#204782] transition-colors duration-300">
-                    Hire Me
-                </button>
+                <Link href="/contact">
+                    <button className="bg-[#1b1b1b] text-white text-xl font-['SF Pro'] px-[21px] py-3 rounded-[30px] border-2 border-[#204782] hover:bg-[#204782] transition-colors duration-300">
+                        Hire Me
+                    </button>
+                </Link>
             </div>
         </footer>
     );
