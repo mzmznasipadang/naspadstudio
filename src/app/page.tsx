@@ -9,6 +9,8 @@ import FeaturedWorks from "./components/FeaturedWorks";
 import ContactSection from "./components/ContactSection";
 import Footer from "./components/Footer";
 
+export const revalidate = 10; // revalidate every 10 seconds
+
 export default function Home() {
   return (
     <Layout>
