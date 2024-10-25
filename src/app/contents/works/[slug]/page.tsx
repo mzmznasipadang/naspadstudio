@@ -125,7 +125,7 @@ export default async function WorkPage({ params }: { params: { slug: string } })
     return (
         <>
         <Header />
-        <article className="min-h-screen bg-[#101111] py-8 px-4">
+        <article className="min-h-screen bg-[#101111] py-8 px-4 animate-fade-in">
             <div className="max-w-4xl mx-auto">
                 {/* Hero Section */}
                 <div className="text-center mb-16">
