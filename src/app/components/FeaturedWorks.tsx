@@ -119,23 +119,8 @@ export default async function FeaturedWorks() {
                           Visit Project
                         </Link>
                       )}
-
-                      {work.repository && (
-                        <Link
-                          href={`https://github.com/${work.repository}`}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="w-full bg-[#282828] text-white text-base font-['SF Pro'] py-3 px-6 rounded-[20px] border-2 border-[#1b98e0] text-center
-                            transition-all duration-300 
-                            hover:bg-[#1b98e0]/10 hover:scale-105 
-                            active:scale-95"
-                        >
-                          View Source
-                        </Link>
-                      )}
-
                       <Link
-                        href={`/works/${work.slug.current}`}
+                        href={`/contents/works/${work.slug.current}`}
                         className="w-full bg-[#282828] text-white text-base font-['SF Pro'] py-3 px-6 rounded-[20px] border-2 border-[#1b98e0] text-center
       transition-all duration-300 
       hover:bg-[#1b98e0]/10 hover:scale-105 
