@@ -14,7 +14,7 @@ export default function Header() {
                 {/* Back Button */}
                 <div className="flex items-center gap-8">
                   <Link
-                    href="/contents/works"
+                    href="/projects"
                     className="text-white hover:text-[#1b98e0] transition-colors text-lg"
                   >
                     ← Back
