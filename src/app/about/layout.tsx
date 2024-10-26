@@ -1,20 +1,20 @@
-// src/app/contact/layout.tsx
+// src/app/about/layout.tsx
 import type { Metadata } from 'next'
 
 export const  metadata: Metadata = {
     title: 'About Us | NasPad Studio Digital',
     description: 'Learn more about NasPad Studio Digital and our journey in design and development.',
     openGraph: {
-      title: 'Contact Us | NasPad Studio Digital',
-      description: 'Please hire me, I need money.',
-      url: 'https://naspadstudio.id/contact',
+      title: 'About Us | NasPad Studio Digital',
+      description: 'Learn more about NasPad Studio Digital and our journey in design and development.',
+      url: 'https://naspadstudio.id/about',
       siteName: 'NasPad Studio Digital',
       images: [
         {
           url: '/og.png',
           width: 1200,
           height: 630,
-          alt: 'NasPad Studio Digital Contact Page',
+          alt: 'NasPad Studio Digital About Us Page',
         },
       ],
       locale: 'en_US',
@@ -22,8 +22,8 @@ export const  metadata: Metadata = {
     },
     twitter: {
       card: 'summary_large_image',
-      title: 'Contact Us | NasPad Studio Digital',
-      description: 'Please hire me, I need money.',
+      title: 'About Us | NasPad Studio Digital',
+      description: 'Learn more about NasPad Studio Digital and our journey in design and development.',
       images: ['/og.png'],
       creator: '@MzMzNasiPadang',
     },

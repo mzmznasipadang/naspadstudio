@@ -18,7 +18,7 @@ export const metadata: Metadata = {
           url: '/og.png',
           width: 1200,
           height: 630,
-          alt: 'NasPad Studio Digital Contact Page',
+          alt: 'NasPad Studio Digital Home Page',
         },
       ],
       locale: 'en_US',
