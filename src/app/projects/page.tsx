@@ -217,7 +217,7 @@ export default async function ProjectsPage() {
                 <div className="container mx-auto px-4 py-16">
                     <h1 className="text-5xl font-bold text-center mb-4">Projects</h1>
                     <p className="text-center text-gray-300 mb-12 max-w-2xl mx-auto">
-                    Some of the unbelievable projects that I did, terus sisanya bullshit bla bla abcdefg, terus ga percayaan ini beneran projek gw kerjain? terus terus flexing dkk intinya, pls hire me buat menuhin page ini (smiley face)
+                    Explore a curated collection of my proudest creations - from pixel-perfect designs to robust enterprise solutions. Each project tells a unique story of challenges conquered and visions brought to life. Need proof? Just scroll down! ✨ Looking forward to adding your project to this showcase.
                     </p>
 
                     {featuredProjects.length > 0 && (
